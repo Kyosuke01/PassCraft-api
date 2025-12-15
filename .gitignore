@@ -1,0 +1,96 @@
+# =========================
+# Node.js / Next.js
+# =========================
+**/node_modules/
+**/.pnp
+**/.pnp.*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/versions
+
+# Next.js build outputs
+**/.next/
+**/out/
+**/build/
+
+# Vercel
+**/.vercel/
+
+# Logs and debug files
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.pnpm-debug.log*
+
+# Env & secrets
+**/.env*
+**/secret_config.yaml
+
+# TypeScript
+**/*.tsbuildinfo
+**/next-env.d.ts
+
+# Python virtual environments
+**/env/
+**/venv/
+**/ENV/
+**/.venv/
+
+# Python compiled files
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Python logs
+**/*.log
+
+# SQLite DB files
+**/*.sqlite3
+
+# Temporary files
+**/*.tmp
+**/*.temp
+**/*.bak
+**/*.swp
+**/*.swo
+
+# macOS
+**/.DS_Store
+
+# Windows
+**/Thumbs.db
+**/desktop.ini
+
+# IDE / editor configs
+**/.vscode/
+**/.idea/
+**/*.sublime-project
+**/*.sublime-workspace
+**/*.iml
+
+# pytest cache
+**/.pytest_cache/
+
+# Coverage reports
+**/htmlcov/
+**/.coverage
+**/.coverage.*
+
+# Django migrations
+**/migrations/
+
+# Jupyter Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# mypy cache
+**/.mypy_cache/
+
+# Cython debug symbols
+**/cython_debug/
+
+# =========================
+# Blocage fichier spécifique
+# =========================
+**/guide_de_demarrage.txt
