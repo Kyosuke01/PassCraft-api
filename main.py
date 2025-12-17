@@ -130,8 +130,10 @@ async def api_generate_password(
     special: bool = True,
 ):
     origin = request.headers.get("origin")
+    print("Origine reçu :", origin)
 
     if origin not in ALLOWED_ORIGINS:
+        print("Origine refusée :", origin)
         raise HTTPException(status_code=403, detail="Origine non autorisée")
 
     client_ip = request.headers.get("x-forwarded-for")
