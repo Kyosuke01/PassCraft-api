@@ -28,7 +28,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
     allow_credentials=False,
-    allow_methods=["*"],
+    allow_methods=["GET", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -130,10 +130,8 @@ async def api_generate_password(
     special: bool = True,
 ):
     origin = request.headers.get("origin")
-    print("Origine reçu :", origin)
 
     if origin not in ALLOWED_ORIGINS:
-        print("Origine refusée :", origin)
         raise HTTPException(status_code=403, detail="Origine non autorisée")
 
     client_ip = request.headers.get("x-forwarded-for")
